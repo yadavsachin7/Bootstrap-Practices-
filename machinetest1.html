@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer
+        {
+            min-height: 600px;
+            width: 100%;
+            padding-top:50px ;
+            background:linear-gradient(60deg,rgb(131, 147, 235),rgb(228, 79, 228)) ;
+        }
+        .form-div
+        {
+            height: 410px;
+            width: 600px;
+            background-color: white;
+            margin: 0px auto;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .left
+        {
+            height: 210px;
+            width: 300px;
+            float: left;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .right
+        {
+            height: 210px;
+            width: 300px;
+            float: left;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .input-form
+        {
+            height: 35px;
+            width: 275px;
+            border-radius:5px ;
+            box-shadow: 1px 2px 8px black;
+            border: none;
+
+        }
+        .btn
+        {
+            height: 40px;
+            width: 570px;
+            border-radius:5px ;
+            border: none;
+            margin-left: 15px;
+            color: white;
+            background:linear-gradient(60deg,rgb(131, 147, 235),rgb(228, 79, 228)) ;
+
+
+        }
+        .d
+        {
+            
+            padding: 15px 9px;
+            font-weight: bold;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+        .gndr
+        {
+            padding-left: 10px;
+        }
+        .hr{
+            width: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="form-div">
+             <div class="d">
+                Registration
+             </div>
+             
+            
+    
+            <div class="left">
+                Full Name <br>
+            <input type="text" placeholder="Enter Your Name" class="input-form"><br> <br>
+             Email <br>
+            <input type="email" placeholder="Enter Your Email" class="input-form"><br><br>
+             Password <br>
+            <input type="password" placeholder="Enter Your Password" class="input-form"><br><br>
+            </div>
+            <div class="right">
+                User Name
+            <input type="text" placeholder="User Name" class="input-form"> <br><br>
+                Phone Number
+            <input type="number" placeholder="Enter Number" class="input-form"> <br><br>
+                Confirm Password
+            <input type="password" placeholder="Conform Password" class="input-form"> <br><br> <br>
+            
+            </div> <br> <br>
+            <div class="gndr">
+                Gender <br> 
+            <input type="radio"> Male &nbsp &nbsp &nbsp 
+            <input type="radio"> Female  &nbsp &nbsp &nbsp &nbsp
+            <input type="radio"> Prefer not to say <br> <br>
+            </div>
+            <button class="btn">
+                Register
+            </button> 
+
+        </div>
+    </div>
+</body>
+</html>
