@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-11 mx-auto bg-primary">
+                <div class="row p-5">
+                    <div class="col-sm-10 mx-auto bg-white shadow-lg p-4 rounded">
+                        <h2>Registration</h2>
+                        <hr class="" style="width:50px; border-bottom: 1px solid blue;">
+                        <p>Personal Details</p>  
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <b><label for="name">Full Name</label> </b>
+                                <input type="text" id="name" class="form-control mb-3" placeholder="Enter Your Name">
+                                <b id="b1"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <b><label for="dob">Date Of Birth</label> </b>
+                                <input type="date" id="dob" class="form-control mb-3" placeholder="Enter Your DOB">
+                                <b id="b2"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="email" class="fw-bold">Email</label>
+                                <input type="email" id="email" class="form-control mb-3" placeholder="Enter Your Email">
+                                <b id="b3"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="number" class="fw-bold">Mobile Number</label>
+                                <input type="number" id="number" class="form-control mb-3"
+                                    placeholder="Enter Your Mobile">
+                                    <b id="b4"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="gender" class="fw-bold">Gender</label>
+                                <input type="text" id="gender" class="form-control mb-3"
+                                    placeholder="Enter Your Gender">
+                                    <b id="b5"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="occupation" class="fw-bold">Occupation</label>
+                                <input type="text" id="occupation" class="form-control mb-3"
+                                    placeholder="Enter Your Occupation">
+                                    <b id="b6"></b>
+                            </div>
+
+                        </div>
+                        <p>Identity Details</p>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <b><label for="id">Id Type</label> </b>
+                                <input type="text" id="id" class="form-control mb-3" placeholder="Enter Id Type">
+                                <b id="b7"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <b><label for="idnumber">Id Number</label> </b>
+                                <input type="number" id="idnumber" class="form-control mb-3"
+                                    placeholder="Enter Id Number">
+                                    <b id="b8"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="authority" class="fw-bold">Issue Authority</label>
+                                <input type="text" id="authority" class="form-control mb-3"
+                                    placeholder="Enter Issue Authority">
+                                    <b id="b9"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="issuedate" class="fw-bold">Issue Date</label>
+                                <input type="date" id="issuedate" class="form-control mb-3"
+                                    placeholder="Enter Issue Date">
+                                    <b id="b10"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="issuestate" class="fw-bold">Issue State</label>
+                                <input type="text" id="issuestate" class="form-control mb-3"
+                                    placeholder="Enter Id issue State">
+                                    <b id="b11"></b>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="expdate" class="fw-bold">Expiry Date</label>
+                                <input type="date" id="expdate" class="form-control mb-3"
+                                    placeholder="Enter Id Expiry Date">
+                                    <b id="b12"></b>
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn-primary w-25 fs-5" onclick="textvalue()">Next
+                            <!-- <span><i class="fa-sharp fa-solid fa-arrow-right"></i></span> -->
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var nam= document.querySelector("#name")
+        var userdob= document.querySelector("#dob")
+        var email= document.querySelector("#email")
+        var mobile= document.querySelector("#number")
+        var gender= document.querySelector("#gender")
+        var occupation= document.querySelector("#occupation")
+        var id= document.querySelector("#id")
+        var idnum= document.querySelector("#idnumber")
+        var authority= document.querySelector("#authority")
+        var issuedate= document.querySelector("#issuedate")
+        var issuestate= document.querySelector("#issuestate")
+        var expdate= document.querySelector("#expdate")
+
+
+        var b1= document.querySelector("#b1")
+        var b2= document.querySelector("#b2")
+        var b3= document.querySelector("#b3")
+        var b4= document.querySelector("#b4")
+        var b5= document.querySelector("#b5")
+        var b6= document.querySelector("#b6")
+        var b7= document.querySelector("#b7")
+        var b8= document.querySelector("#b8")
+        var b9= document.querySelector("#b9")
+        var b10= document.querySelector("#b10")
+        var b11= document.querySelector("#b11")  
+        var b12= document.querySelector("#b12")
+
+        function textvalue(){
+            var namvalue = nam.value
+            var dobvalue = userdob.value
+            var emailvalue = email.value
+            var mobilevalue = mobile.value
+            var gendervalue = gender.value
+            var occupationvalue = occupation.value
+            var idvalue = id.value
+            var idnumbervalue = idnum.value
+            var authorityvalue = authority.value
+            var issuedatevalue = issuedate.value
+            var issuestatevalue= issuestate.value
+            var expdatevalue = expdate.value
+
+
+            b1.innerText = namvalue
+            b2.innerText = dobvalue
+            b3.innerText = emailvalue
+            b4.innerText = mobilevalue
+            b5.innerText = gendervalue
+            b6.innerText = occupationvalue
+            b7.innerText = idvalue
+            b8.innerText = idnum
+            b9.innerText = authorityvalue
+            b10.innerText = issuedatevalue
+            b11.innerText = issuestatevalue
+            b12.innerText = expdatevalue
+
+            b1.style.background="red"
+            b2.style.background="green"
+            b3.style.background="red"
+            b4.style.background="yellow"
+            b5.style.background="red"
+            b6.style.background="blue"
+            b7.style.background="red"
+            b8.style.background="black"
+            b9.style.background="red"
+            b10.style.background="aqua"
+            b11.style.background="red"
+            b12.style.background="pink"
+
+        }
+
+    </script>
+</body>
+
+</html>
